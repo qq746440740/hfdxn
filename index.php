@@ -17,9 +17,9 @@ if (empty($request)) {
  
 //验证密码是否正确
 $data = json_decode($request, true);
-if ($data['password'] != $password) {
-    die('password is error');
-}
+// if ($data['password'] != $password) {
+//     die('password is error');
+// }
 
 echo shell_exec("cd {$local} && git pull {$remote} 2>&1");
 die('done ' . date('Y-m-d H:i:s', time()));
