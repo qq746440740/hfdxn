@@ -1,5 +1,5 @@
 <?php
-//测试git push同步到远程服务器1
+//测试git push同步到远程服务器
 
 //本地路径
 $local = '/home/wwwroot/www.hfdxn.com';
@@ -21,5 +21,5 @@ $request = file_get_contents('php://input');
 //     die('password is error');
 // }
 
-echo shell_exec("cd {$local} && git pull 2>&1");
+echo shell_exec("cd {$local} && git pull {$remote} 2>&1");
 die('done ' . date('Y-m-d H:i:s', time()));
