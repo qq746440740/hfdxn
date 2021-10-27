@@ -1,5 +1,5 @@
 <?php
-//测试git push同步到远程服务器1
+//测试git push同步到远程服务器
 
 //本地路径
 $local = '/home/wwwroot/www.hfdxn.com';
