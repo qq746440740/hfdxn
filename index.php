@@ -1,4 +1,6 @@
 <?php
+//测试git push同步到远程服务器
+
 //本地路径
 $local = '/home/wwwroot/www.hfdxn.com';
 //仓库地址
@@ -18,6 +20,6 @@ $data = json_decode($request, true);
 if ($data['password'] != $password) {
     die('password is error');
 }
- 
+
 echo shell_exec("cd {$local} && git pull {$remote} 2>&1");
 die('done ' . date('Y-m-d H:i:s', time()));
