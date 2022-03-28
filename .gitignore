@@ -1,0 +1,13 @@
+/.idea
+/data/tpl
+/runtime
+work
+.env
+.env.local
+.env.devlop
+/upload
+/vendor
+composer.lock
+vendor
+monitor.sh
+.phpunit.result.cache
